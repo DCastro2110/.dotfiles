@@ -25,6 +25,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Sacred-Heart-of-Jesus.jpg
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startuo-id autorandr --change
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -59,6 +60,9 @@ bindsym $mod+B exec brave-browser
 
 # start file manager
 bindsym $mod+Shift+f exec kitty -e ranger
+
+# start nmtui
+bindsym $mod+N exec kitty -e nmtui
 
 # kill focused window
 bindsym $mod+Shift+q kill
